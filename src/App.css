@@ -1,0 +1,645 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+.coloum {
+  flex-direction: column;
+}
+.mt {
+margin-top: 1.5rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child-container-size {
+ width: 85%;
+}
+
+.spacebetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 100vw;
+
+ }
+ .nav-content {
+  border-bottom: 1.5px solid black;
+ }
+ .nav-content p {
+  font-size: 14px;
+    font-weight: 500;
+ }
+ .nav-content h2 {
+  font-size: 25px;
+    font-family: Italic;
+    font-weight: bold;
+ }
+
+ .icon-box {
+  width: 10vw;
+  display: flex;
+ }
+ .search-icon {
+  margin-right: 0.7rem;
+  font-size: 20px;
+
+ }
+
+ .list-box  {
+  /* width: 100%; */
+  list-style-type: none;
+  padding: 0;
+ }
+ .list-box li {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+ }
+
+
+
+/* CSS for Popup Form */
+.popup-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f3f4f6; /* Light background color for form */
+  padding: 30px;
+  border-radius: 12px; /* Rounded corners for form */
+  width: 320px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  z-index: 1000;
+  font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+.popup-form h2 {
+  margin-bottom: 20px;
+  color: #2c3e50; /* Darker heading color */
+  text-align: center;
+}
+
+.popup-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-form input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px; /* Rounded corners for inputs */
+  background-color: #fff; /* White background for inputs */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow for inputs */
+  font-size: 16px;
+  transition: all 0.3s ease; /* Smooth transition on focus */
+}
+
+.popup-form input:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px 2px #3498db; /* Blue shadow on focus */
+}
+
+.popup-form button {
+  background-color: #3498db; /* Blue color for buttons */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 12px;
+  border-radius: 8px; /* Rounded corners for buttons */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.popup-form button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.popup-form button[type="button"] {
+  background-color: #e74c3c; /* Red color for close button */
+}
+
+.popup-form button[type="button"]:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+
+.popup-form input::placeholder {
+  color: #95a5a6;
+  font-style: italic;
+}
+
+
+/* Base button styles */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* White text */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  text-align: center;
+  text-decoration: none; /* Remove underline for anchor tags */
+}
+
+.button:hover {
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Sign Up button styles */
+.sign-up-button {
+  background-color: #3498db; /* Blue background */
+}
+
+.sign-up-button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Sign In button styles */
+.sign-in-button {
+  background-color: #2ecc71; /* Green background */
+}
+
+.sign-in-button:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Optional: Close button styling (if needed) */
+.close-button {
+  background-color: #e74c3c; /* Red background */
+}
+
+.close-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+
+
+
+
+
+
+/* Add Blog Button */
+.add-blog-button {
+  background-color: #e67e22; /* Orange background */
+}
+
+.add-blog-button:hover {
+  background-color: #d35400; /* Darker orange on hover */
+}
+
+.blogform-container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+ 
+  background-color: #f8f9fa; /* Light background */
+  padding: 20px;
+  background-color: #f8f9fa;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 37vw;
+}
+
+.blogform {
+  background-color: #ffffff; /* White form background */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px; /* Max width for form */
+  width: 100%; /* Full width for responsiveness */
+}
+
+.blogform h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff; /* Highlight on focus */
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing */
+  height: 100px; /* Default height */
+}
+
+.submit-button,
+.close-button {
+  width: calc(50% - 10px);
+  padding: 10px;
+  margin: 10px 5px 0; /* Margins for spacing */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button {
+  background-color: #007bff; /* Primary button color */
+  color: white;
+}
+
+.close-button {
+  background-color: #dc3545; /* Secondary button color */
+  color: white;
+}
+
+.submit-button:hover,
+.close-button:hover {
+  transform: translateY(-2px);
+}
+
+.submit-button:active,
+.close-button:active {
+  transform: translateY(0);
+}
+
+/* //Banner */
+
+ .child-container {
+
+  background-color: #333;
+  padding: 20px;
+  border-radius: 2px;
+  position: relative;
+  height: 13vw;
+  
+ }
+
+ .content {
+  position: absolute;
+  left: 20px; /* Adjust positioning */
+  color: white;
+  z-index: 1; /* Ensure text is above the background images */
+}
+
+.content h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: italic;
+  /* Adjust as necessary */
+}
+
+.content p {
+  margin-top: 10px;
+  font-size: 1.2rem; /* Adjust as necessary */
+}
+
+
+.card-container {
+  width: 45%;
+  border: 1px solid #7e6a6a;
+  padding: 10px;
+  border-radius: 3px;
+  display: flex;
+  box-sizing: border-box;
+}
+.card-content h3{
+font-size: 1.5rem;
+font-family: Italic;
+font-weight: bold;
+margin-top: 0.5rem;
+}
+.date-text {
+  font-size: 13px;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.margin {
+margin: 0;
+}
+
+
+.card-content > p {
+font-weight: bold;
+}
+
+.text-color {
+  color: #0000FF;
+}
+.thumbnail-image {
+width: 200px;
+height: 150px;
+object-fit: cover;
+}
+.ml {
+  margin-left: 2rem;
+}
+
+/* Footer base styles */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px 0;
+}
+
+.footer-column h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #f39c12;
+}
+
+.footer-column p,
+.footer-column ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #f39c12;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #f39c12;
+}
+
+/* Footer bottom styles */
+.footer-bottom {
+  background-color: #1a252f;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Responsive styles at 400px breakpoint */
+@media (max-width: 400px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin: 10px 0;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-column h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-column p,
+  .footer-column ul {
+    font-size: 0.9rem;
+  }
+}
+
+.blogs-list {
+  display: flex;
+  flex-direction: column; /* Stack the blog items vertically */
+  gap: 20px; /* Add some space between each blog item */
+  max-width: 800px; /* Limit the max width of the list */
+  margin: 0 auto; /* Center the list horizontally */
+  padding: 20px; /* Add some padding around the list */
+  background-color: #f9f9f9; /* Light background for the blog list */
+  border-radius: 8px; /* Rounded corners for the blog list */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a 3D effect */
+}
+
+.blog-item {
+  background-color: #ffffff; /* White background for each blog item */
+  padding: 20px; /* Add some padding inside each blog item */
+  border-radius: 8px; /* Rounded corners for each blog item */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for each blog item */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.blog-item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.blog-item h3 {
+  margin: 0 0 10px; /* Remove margin at the top and add space below */
+  color: #333; /* Darker text color for titles */
+  font-size: 1.5rem; /* Larger font size for titles */
+}
+
+.blog-item h4 {
+  margin: 10px 0; /* Space above and below the heading */
+  color: #555; /* Slightly lighter color for the heading */
+  font-size: 1.2rem; /* Medium font size for subheadings */
+}
+
+.blog-item p {
+  color: #666; /* Gray color for paragraph text */
+  line-height: 1.6; /* Increase line height for better readability */
+  margin-bottom: 10px; /* Space below each paragraph */
+}
+
+.blog-item p strong {
+  color: #333; /* Darker color for emphasized text */
+}
+
+@media (max-width: 768px) {
+  .blogs-list {
+    padding: 10px; /* Less padding on smaller screens */
+  }
+
+  .blog-item {
+    padding: 15px; /* Less padding inside each blog item on smaller screens */
+  }
+
+  .blog-item h3 {
+    font-size: 1.3rem; /* Slightly smaller title font size */
+  }
+
+  .blog-item h4 {
+    font-size: 1.1rem; /* Slightly smaller heading font size */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+  .child-container {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .content {
+    left: 10px; /* Adjust left position */
+  }
+
+  .content h2 {
+    font-size: 1.8rem; /* Smaller font size for title */
+  }
+
+  .content p {
+    font-size: 1rem; /* Smaller font size for paragraph */
+    margin-top: 5px; /* Adjust margin between h2 and p */
+  }
+}
+
+
+@media (max-width: 400px) {
+  .blogform {
+    padding: 20px; /* Less padding on smaller screens */
+  }
+
+  .submit-button,
+  .close-button {
+    width: 100%; /* Full width for buttons */
+    margin: 5px 0; /* Reduce margin */
+  }
+}
+
+
+
+
+@media (max-width: 400px) {
+  .popup-form {
+    width: 90%; /* Adjust width on smaller screens */
+    padding: 20px;
+  }
+}
+
+
+
+
