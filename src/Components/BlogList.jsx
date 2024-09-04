@@ -21,22 +21,66 @@ const BlogList = ({ blogs }) => {
         }
       }, [blogs]);
 
-    console.log ("gsggsgs",blogs)
+ 
   return (
-    <div className='blogs-list'>
-    {displayedBlogs.length === 0 ? (
-      <p>No blogs available. Add a new blog to see it here.</p>
-    ) : (
-      displayedBlogs.map((blog, index) => (
-        <div key={index} className='blog-item'>
-          <h3>{blog.title}</h3>
-          <p>Date: {blog.date}</p>
-          <h4>{blog.heading}</h4>
-          <p><strong>Sub Heading:</strong> {blog.subHeading}</p>
-          <p><strong>Description:</strong> {blog.description}</p>
-        </div>
-      ))
-    )}
+    <div className='container center'>
+       <div className='child-container-size flex'>
+
+      <div className='blogs-list'>
+
+
+
+
+{displayedBlogs.length === 0 ? (
+  <p>No blogs available. Add a new blog to see it here.</p>
+) : (
+  displayedBlogs.map((blog, index) => (
+    <div key={index} className='blog-item'>
+      <h3>{blog.title}</h3>
+      <p>Date: {blog.date}</p>
+      <h4>{blog.heading}</h4>
+      <p><strong>Sub Heading:</strong> {blog.subHeading}</p>
+      <p><strong>Description:</strong> {blog.description}</p>
+    </div>
+  ))
+)}
+</div>
+
+<div class="container-about">
+  
+    <section class="about-section">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+    </section>
+
+
+    <section class="archives-section">
+        <h2>Archives</h2>
+        <ul>
+            <li><a href="#">January 2024</a></li>
+            <li><a href="#">December 2023</a></li>
+            <li><a href="#">November 2023</a></li>
+          
+        </ul>
+    </section>
+
+
+    <section class="elsewhere-section">
+        <h2>Elsewhere</h2>
+        <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          
+        </ul>
+    </section>
+</div>
+
+
+      </div>
+     
+   
+  
   </div>
   )
 }

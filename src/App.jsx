@@ -20,10 +20,11 @@ function App() {
   return (
    <>
 
-<Navbar onBlogSubmit={handleBlogSubmit} />  {/* Pass handleBlogSubmit to Navbar */}
+<Navbar onBlogSubmit={handleBlogSubmit} /> 
       <Banner />
       <Card />
-      <BlogList blogs={blogs} />  {/* Render the blogs in BlogList */}
+
+      <BlogList blogs={blogs} />  
       <Footer />
    
    </>

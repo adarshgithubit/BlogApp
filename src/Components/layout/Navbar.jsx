@@ -55,7 +55,7 @@ const Navbar = ({onBlogSubmit}) => {
    <>
 <div className='container center coloum'>
 
-<div className='nav-content spacebetween child-container-size'>
+<div className='nav-content spacebetween-nav child-container-size'>
 
     <p>Subscribe</p>
 
@@ -83,7 +83,7 @@ const Navbar = ({onBlogSubmit}) => {
 </div>
 
 <div className='child-container-size list-container'>
-<ul className='list-box spacebetween'>
+<ul className='list-box spacebetween-nav'>
   <li>World</li>
   <li>U.S</li>
   <li>Technology</li>
