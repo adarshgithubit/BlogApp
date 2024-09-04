@@ -505,6 +505,14 @@ object-fit: cover;
     text-align: center;
   }
 
+  .section {
+    width: auto !important;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
   .footer-column {
     margin: 10px 0;
   }
@@ -591,9 +599,10 @@ object-fit: cover;
   /* justify-content: space-between; */
   flex-direction: column;
   padding: 20px;
+ 
 }
 
-section {
+.section {
   width: 60%;
   background-color: #fff;
   padding: 20px;
@@ -677,6 +686,12 @@ a:hover {
     height: 60vw; 
   }
 
+  .about-section {
+    width: auto !important;
+  }
+
+
+
 
   .list-box li {
     font-size: 12.5px;
@@ -717,6 +732,7 @@ a:hover {
   width: auto;
   justify-content: center;
     align-items: center;
+    gap: 1.5rem;
 }
 
 
